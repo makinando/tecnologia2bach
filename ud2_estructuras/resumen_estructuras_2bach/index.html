@@ -1,0 +1,2777 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y ejercicios PAU - Andalucía">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Unidad 2 - Estructuras - Tecnología e Ingeniería II - 2º Bach</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-2-estructuras" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Tecnología e Ingeniería II - 2º Bach" class="md-header__button md-logo" aria-label="Tecnología e Ingeniería II - 2º Bach" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología e Ingeniería II - 2º Bach
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Unidad 2 - Estructuras
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud1_materiales/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD1 Ensayo en materiales
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../teoria/" class="md-tabs__link">
+          
+  
+  
+  UD2 Estructuras
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud3_maquinas_termicas/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD3 Máquinas térmicas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud4_neumatica_hidraulica/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD4 Neumática e hidráulica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud5_corriente_alterna/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD5 Corriente alterna
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud6_electronica_digital/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD6 Electrónica digital
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud7_sistemas_automaticos/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD7 Sistemas automáticos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tecnología e Ingeniería II - 2º Bach" class="md-nav__button md-logo" aria-label="Tecnología e Ingeniería II - 2º Bach" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tecnología e Ingeniería II - 2º Bach
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD1 Ensayo en materiales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD1 Ensayo en materiales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud1_materiales/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD2 Estructuras
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD2 Estructuras
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD3 Máquinas térmicas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD3 Máquinas térmicas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD4 Neumática e hidráulica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD4 Neumática e hidráulica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD5 Corriente alterna
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD5 Corriente alterna
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD6 Electrónica digital
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD6 Electrónica digital
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD7 Sistemas automáticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD7 Sistemas automáticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unidad-2-estructuras"><strong>Unidad 2 - Estructuras</strong><a class="headerlink" href="#unidad-2-estructuras" title="Permanent link">&para;</a></h1>
+<h2 id="1-estructuras-elementos-de-estructuras-sencillas">1. Estructuras. Elementos de estructuras sencillas<a class="headerlink" href="#1-estructuras-elementos-de-estructuras-sencillas" title="Permanent link">&para;</a></h2>
+<p>Una <strong>estructura artificial</strong> es el conjunto de partes de una construcción compuestas por elementos resistentes unidos entre sí por sus extremos, con la finalidad de soportar, sin romperse, las cargas y los efectos de los agentes exteriores a que se encuentran sometidos.</p>
+<h3 id="11-tipos-de-elementos-estructurales">1.1 Tipos de elementos estructurales<a class="headerlink" href="#11-tipos-de-elementos-estructurales" title="Permanent link">&para;</a></h3>
+<p>Los elementos estructurales se clasifican según su posición y el esfuerzo que soportan:</p>
+<ul>
+<li><strong>Lineales</strong>: vigas, pilares, arcos, tirantes.</li>
+<li><strong>Superficiales</strong>: muros, forjados.</li>
+</ul>
+<p>Los elementos están formados por <strong>perfiles</strong>, que son las formas comerciales en que se suministran los aceros y otros materiales.</p>
+<p><img alt="Perfiles estructurales abiertos y cerrados" src="../images/01.png" /></p>
+<!-- 📷 IMAGEN 1: Tabla de perfiles estructurales (abiertos: L, T, U, H; cerrados: cuadrado, triangular, cilíndrico) -->
+<blockquote>
+<p><strong>[IMAGEN: Perfiles estructurales abiertos y cerrados]</strong></p>
+</blockquote>
+<h3 id="12-esfuerzos-internos">1.2 Esfuerzos internos<a class="headerlink" href="#12-esfuerzos-internos" title="Permanent link">&para;</a></h3>
+<p>Los <strong>esfuerzos</strong> son las tensiones internas a las que se somete un cuerpo cuando actúan sobre él varias fuerzas externas. Los tipos principales son:</p>
+<table>
+<thead>
+<tr>
+<th>Esfuerzo</th>
+<th>Descripción</th>
+<th>Elemento típico</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Axil de compresión</strong></td>
+<td>Fuerzas opuestas que acortan el elemento</td>
+<td>Pilar, arco</td>
+</tr>
+<tr>
+<td><strong>Axil de tracción</strong></td>
+<td>Fuerzas opuestas que estiran el elemento</td>
+<td>Tirante</td>
+</tr>
+<tr>
+<td><strong>Flector</strong></td>
+<td>Fuerzas transversales que curvan el elemento</td>
+<td>Viga</td>
+</tr>
+<tr>
+<td><strong>Torsor</strong></td>
+<td>Par de fuerzas que giran el elemento</td>
+<td>Eje de transmisión</td>
+</tr>
+<tr>
+<td><strong>Cortante</strong></td>
+<td>Fuerzas paralelas que tienden a cortar la sección</td>
+<td>Viga</td>
+</tr>
+</tbody>
+</table>
+<!-- 📷 IMAGEN 2: Diagrama de los 5 tipos de esfuerzos sobre una barra cilíndrica -->
+<blockquote>
+<p><strong>[IMAGEN: Tipos de esfuerzos internos]</strong></p>
+</blockquote>
+<h3 id="13-elementos-estructurales-en-la-edificacion">1.3 Elementos estructurales en la edificación<a class="headerlink" href="#13-elementos-estructurales-en-la-edificacion" title="Permanent link">&para;</a></h3>
+<p><strong>Viga</strong></p>
+<ul>
+<li><strong>Función</strong>: resistir cargas perpendiculares a su eje.</li>
+<li>Trabaja principalmente a <strong>flexión</strong>.</li>
+<li>Esfuerzos: <strong>cortante</strong> y <strong>momento flector</strong>.</li>
+<li>Materiales: hormigón, acero o madera.</li>
+</ul>
+<p><strong>Pilar</strong></p>
+<ul>
+<li><strong>Función</strong>: mantener elevada la estructura.</li>
+<li>Trabaja principalmente a <strong>compresión</strong>.</li>
+<li>Esfuerzos: <strong>axil</strong> y <strong>momento flector</strong>.</li>
+</ul>
+<p><strong>Pórtico</strong></p>
+<ul>
+<li>Sistema formado por la <strong>unión de vigas y pilares</strong>.</li>
+<li>Las vigas se apoyan sobre los pilares y transmiten la carga.</li>
+</ul>
+<p><strong>Arco</strong></p>
+<ul>
+<li><strong>Función</strong>: soportar cargas verticales.</li>
+<li>Trabaja a <strong>compresión</strong> gracias a su forma.</li>
+<li>Materiales: hormigón, acero, madera o piedra.</li>
+</ul>
+<p><strong>Tirante</strong></p>
+<ul>
+<li><strong>Función</strong>: unir dos elementos o unir la estructura al terreno.</li>
+<li>Trabaja siempre a <strong>tracción</strong>.</li>
+</ul>
+<p><strong>Celosías y cerchas</strong></p>
+<ul>
+<li>Armazón que lleva el peso de forma uniforme a vigas, muros o cimientos.</li>
+<li>Trabaja a <strong>compresión y tracción</strong>, impidiendo la flexión.</li>
+<li>Tipos de cercha: triangular, de pendolón, española, belga, inglesa.</li>
+</ul>
+<!-- 📷 IMAGEN 3: Esquema comparativo de viga, pilar, pórtico, arco, tirante y cercha con sus esfuerzos -->
+<blockquote>
+<p><strong>[IMAGEN: Elementos estructurales en la edificación]</strong></p>
+</blockquote>
+<!-- 📷 IMAGEN 4: Tipos de cerchas (triangular, pendolón, española, belga, inglesa) -->
+<blockquote>
+<p><strong>[IMAGEN: Tipos de cerchas]</strong></p>
+</blockquote>
+<p><strong>Cimientos</strong></p>
+<ul>
+<li><strong>Función</strong>: repartir el peso de la estructura y transmitir las cargas al suelo.</li>
+<li>Trabajan a <strong>compresión</strong>.</li>
+<li>Material: hormigón armado.</li>
+</ul>
+<h3 id="14-elementos-estructurales-en-la-maquinaria">1.4 Elementos estructurales en la maquinaria<a class="headerlink" href="#14-elementos-estructurales-en-la-maquinaria" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Chasis y bastidor</strong>: armazón metálico de soporte de un vehículo. Debe tener resistencia a la fatiga, rigidez y ligereza.</li>
+<li><strong>Bancada</strong>: estructura de una máquina herramienta sobre la que se construye ésta. Soporta temblores, mantiene la precisión y aloja los mecanismos.</li>
+</ul>
+<h2 id="2-estabilidad-y-calculos-basicos-de-las-estructuras">2. Estabilidad y cálculos básicos de las estructuras<a class="headerlink" href="#2-estabilidad-y-calculos-basicos-de-las-estructuras" title="Permanent link">&para;</a></h2>
+<p>La finalidad de las estructuras es la <strong>resistencia</strong>: deben conseguir que las construcciones se sostengan y perduren en el tiempo. Los cálculos estructurales se simplifican en dos tipos:</p>
+<ol>
+<li>Cálculo de la <strong>dimensión</strong> de la estructura.</li>
+<li>Cálculos de <strong>estabilidad</strong> (que no se superen los esfuerzos admisibles).</li>
+</ol>
+<p>Las fases del cálculo son: <em>Estudio previo → Modelo idealizado → Cálculos → Análisis → Proyecto final</em>.</p>
+<h3 id="21-representacion-vectorial-de-fuerzas">2.1 Representación vectorial de fuerzas<a class="headerlink" href="#21-representacion-vectorial-de-fuerzas" title="Permanent link">&para;</a></h3>
+<p>Las fuerzas son magnitudes vectoriales. Para una fuerza F que forma un ángulo α con el eje X:</p>
+<div class="arithmatex">\[F_x = F \cdot \cos\alpha \qquad F_y = F \cdot \text{sen}\,\alpha\]</div>
+<p>El <strong>módulo</strong> de la fuerza resultante:</p>
+<div class="arithmatex">\[F = \sqrt{F_x^2 + F_y^2}\]</div>
+<p>El <strong>ángulo</strong> que forma con el eje X:</p>
+<div class="arithmatex">\[\text{tg}\,\alpha = \frac{F_y}{F_x}\]</div>
+<!-- 📷 IMAGEN 5: Descomposición vectorial de una fuerza F en sus componentes Fx y Fy -->
+<blockquote>
+<p><strong>[IMAGEN: Descomposición vectorial de una fuerza]</strong></p>
+</blockquote>
+<h3 id="22-fuerza-resultante">2.2 Fuerza resultante<a class="headerlink" href="#22-fuerza-resultante" title="Permanent link">&para;</a></h3>
+<p>Cuando dos o más fuerzas son concurrentes (actúan sobre un mismo punto), se pueden sustituir por una sola <strong>fuerza resultante</strong>:</p>
+<div class="arithmatex">\[\sum \vec{F} = \vec{F_1} + \vec{F_2} + \cdots + \vec{F_n}\]</div>
+<p>Se descompone cada fuerza en sus componentes y se suman:</p>
+<div class="arithmatex">\[F_x = \sum F_{ix} \qquad F_y = \sum F_{iy}\]</div>
+<h3 id="23-momento-de-una-fuerza">2.3 Momento de una fuerza<a class="headerlink" href="#23-momento-de-una-fuerza" title="Permanent link">&para;</a></h3>
+<p>El <strong>momento</strong> de una fuerza respecto a un punto es el producto vectorial entre la fuerza y la distancia al eje de giro:</p>
+<div class="arithmatex">\[\vec{M} = \vec{F} \times \vec{d}\]</div>
+<p>Cuando F y d son perpendiculares:</p>
+<div class="arithmatex">\[M = F \cdot d \quad (\text{N·m})\]</div>
+<blockquote>
+<p><strong>Convenio de signos</strong>: momento positivo → sentido horario; momento negativo → sentido antihorario.</p>
+</blockquote>
+<h3 id="24-condiciones-de-equilibrio-en-un-solido">2.4 Condiciones de equilibrio en un sólido<a class="headerlink" href="#24-condiciones-de-equilibrio-en-un-solido" title="Permanent link">&para;</a></h3>
+<p>Para que un sólido esté en <strong>equilibrio</strong>, la resultante general y el momento resultante deben ser nulos:</p>
+<div class="arithmatex">\[\sum \vec{F_i} = \vec{0} \qquad \sum \vec{M_i} = \vec{0}\]</div>
+<p>Descomponiendo en ejes, se obtienen <strong>seis ecuaciones</strong> (tres de traslación y tres de rotación). En estructuras planas (2D) se reducen a tres:</p>
+<div class="arithmatex">\[\sum F_x = 0 \qquad \sum F_y = 0 \qquad \sum M = 0\]</div>
+<h3 id="25-centro-de-gravedad">2.5 Centro de gravedad<a class="headerlink" href="#25-centro-de-gravedad" title="Permanent link">&para;</a></h3>
+<p>El <strong>centro de gravedad</strong> de un cuerpo es el punto de aplicación del peso de dicho cuerpo.</p>
+<ul>
+<li>En un <strong>cuerpo homogéneo</strong>, el centro de gravedad es su centro de simetría.</li>
+<li>En un <strong>cuerpo compuesto</strong> por partes más sencillas:</li>
+</ul>
+<div class="arithmatex">\[X_G = \frac{\sum m_i \cdot X_i}{M} \qquad Y_G = \frac{\sum m_i \cdot Y_i}{M}\]</div>
+<p>Para cuerpos homogéneos con <strong>huecos</strong>, la masa del hueco se considera negativa.</p>
+<!-- 📷 IMAGEN 6: Ejemplo de cálculo del centro de gravedad de una chapa con hueco circular -->
+<blockquote>
+<p><strong>[IMAGEN: Centro de gravedad de cuerpo con hueco]</strong></p>
+</blockquote>
+<h2 id="3-tipos-de-cargas-tipos-de-apoyos-y-uniones">3. Tipos de cargas. Tipos de apoyos y uniones<a class="headerlink" href="#3-tipos-de-cargas-tipos-de-apoyos-y-uniones" title="Permanent link">&para;</a></h2>
+<p>Las fuerzas que actúan sobre una estructura se llaman <strong>cargas estructurales</strong>. Pueden ser:
+- <strong>Fijas</strong>: el propio peso de la estructura.
+- <strong>Variables</strong>: el viento, la nieve, las personas, etc.</p>
+<h3 id="31-tipos-de-cargas">3.1 Tipos de cargas<a class="headerlink" href="#31-tipos-de-cargas" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Carga puntual</strong></td>
+<td>Se aplica en un único punto</td>
+</tr>
+<tr>
+<td><strong>Carga uniformemente repartida (q)</strong></td>
+<td>Distribuida uniformemente a lo largo de la viga (kN/m)</td>
+</tr>
+</tbody>
+</table>
+<!-- 📷 IMAGEN 7: Esquema de carga puntual vs carga uniformemente repartida sobre una viga -->
+<blockquote>
+<p><strong>[IMAGEN: Tipos de cargas sobre vigas]</strong></p>
+</blockquote>
+<h3 id="32-tipos-de-apoyos">3.2 Tipos de apoyos<a class="headerlink" href="#32-tipos-de-apoyos" title="Permanent link">&para;</a></h3>
+<p>Los apoyos restringen los grados de libertad de movimiento de una estructura. Al restringir un movimiento aparecen <strong>fuerzas y momentos de reacción</strong>.</p>
+<table>
+<thead>
+<tr>
+<th>Apoyo</th>
+<th>Reacciones</th>
+<th>Rotación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Articulado</strong></td>
+<td>R_y (solo vertical)</td>
+<td>Permitida</td>
+</tr>
+<tr>
+<td><strong>Fijo</strong></td>
+<td>R_x y R_y (vertical y horizontal)</td>
+<td>Permitida</td>
+</tr>
+<tr>
+<td><strong>Empotramiento</strong></td>
+<td>R_x, R_y y M_z</td>
+<td>Impedida</td>
+</tr>
+</tbody>
+</table>
+<!-- 📷 IMAGEN 8: Esquema de los tres tipos de apoyo con sus reacciones -->
+<blockquote>
+<p><strong>[IMAGEN: Tipos de apoyos — articulado, fijo y empotramiento]</strong></p>
+</blockquote>
+<h2 id="4-calculo-de-esfuerzos-en-vigas-diagramas-de-esfuerzos">4. Cálculo de esfuerzos en vigas. Diagramas de esfuerzos<a class="headerlink" href="#4-calculo-de-esfuerzos-en-vigas-diagramas-de-esfuerzos" title="Permanent link">&para;</a></h2>
+<p>Para que una viga esté en <strong>equilibrio</strong> debe cumplirse:</p>
+<div class="arithmatex">\[\sum F_x = 0 \qquad \sum F_y = 0 \qquad \sum M = 0\]</div>
+<h3 id="41-procedimiento-general">4.1 Procedimiento general<a class="headerlink" href="#41-procedimiento-general" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Identificar cargas y apoyos.</li>
+<li>Calcular las <strong>reacciones</strong> en los apoyos con las ecuaciones de equilibrio.</li>
+<li>Obtener las expresiones de <strong>momento flector M(x)</strong> y <strong>esfuerzo cortante F(x)</strong> a lo largo de la viga.</li>
+<li>Representar los <strong>diagramas</strong>.</li>
+</ol>
+<h3 id="42-diagrama-de-esfuerzos-cortantes">4.2 Diagrama de esfuerzos cortantes<a class="headerlink" href="#42-diagrama-de-esfuerzos-cortantes" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Se traza una línea de referencia horizontal.</li>
+<li>Se representan las fuerzas y reacciones en cada punto.</li>
+<li>El esfuerzo cortante es la <strong>derivada del momento flector</strong>:</li>
+</ul>
+<div class="arithmatex">\[F_x = \frac{dM}{dx}\]</div>
+<!-- 📷 IMAGEN 9: Ejemplo de diagrama de esfuerzos cortantes (viga biapoyada con carga puntual) -->
+<blockquote>
+<p><strong>[IMAGEN: Diagrama de esfuerzos cortantes — ejemplo]</strong></p>
+</blockquote>
+<h3 id="43-diagrama-de-momentos-flectores-metodo-de-las-areas">4.3 Diagrama de momentos flectores (método de las áreas)<a class="headerlink" href="#43-diagrama-de-momentos-flectores-metodo-de-las-areas" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Calcular las áreas de las figuras del diagrama de esfuerzos cortantes (positivas si están por encima de la línea de referencia, negativas si están por debajo).</li>
+<li>El momento es nulo en el punto de aplicación escogido (extremo libre o apoyo articulado).</li>
+<li>Marcar el valor del área acumulada en cada punto con fuerza o reacción.</li>
+<li>Unir los puntos: las líneas rectas del diagrama cortante se convierten en <strong>inclinadas</strong> en el diagrama de momentos.</li>
+</ol>
+<!-- 📷 IMAGEN 10: Ejemplo de diagrama de momentos flectores (viga biapoyada con carga puntual) -->
+<blockquote>
+<p><strong>[IMAGEN: Diagrama de momentos flectores — ejemplo]</strong></p>
+<p><strong>Resumen de formas de los diagramas:</strong>
+- Carga puntual → esfuerzo cortante <strong>rectangular</strong>, momento flector <strong>triangular</strong>.
+- Carga repartida → esfuerzo cortante <strong>lineal (trapezoidal)</strong>, momento flector <strong>parabólico</strong>.
+- Empotramiento → el máximo siempre aparece en el empotramiento.</p>
+</blockquote>
+<h2 id="5-calculo-de-esfuerzos-en-estructuras-de-barras-articuladas-diagrama-de-cremona">5. Cálculo de esfuerzos en estructuras de barras articuladas. Diagrama de Cremona<a class="headerlink" href="#5-calculo-de-esfuerzos-en-estructuras-de-barras-articuladas-diagrama-de-cremona" title="Permanent link">&para;</a></h2>
+<p>Las <strong>estructuras de barras articuladas</strong> se usan en grúas, torres, puentes, cerchas, etc. Se supone que:
+- Las cargas se soportan en los <strong>nudos</strong>, no en las barras.
+- Las juntas son <strong>pasadores</strong> que permiten el giro libre.
+- Cada barra solo trabaja a <strong>tracción o compresión</strong> axial.</p>
+<h3 id="51-isostaticidad">5.1 Isostaticidad<a class="headerlink" href="#51-isostaticidad" title="Permanent link">&para;</a></h3>
+<p>Para que una estructura articulada sea <strong>isostática</strong> debe cumplirse:</p>
+<div class="arithmatex">\[b = 2n - 3\]</div>
+<p>siendo b el número de barras y n el número de nudos.</p>
+<table>
+<thead>
+<tr>
+<th>Condición</th>
+<th>Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>b &lt; 2n − 3</td>
+<td>Inestable</td>
+</tr>
+<tr>
+<td>b = 2n − 3</td>
+<td>Isostática ✓</td>
+</tr>
+<tr>
+<td>b &gt; 2n − 3</td>
+<td>Hiperestática</td>
+</tr>
+</tbody>
+</table>
+<!-- 📷 IMAGEN 11: Ejemplo de estructura isostática vs hiperestática -->
+<blockquote>
+<p><strong>[IMAGEN: Clasificación de estructuras articuladas — isostática e hiperestática]</strong></p>
+</blockquote>
+<h3 id="52-metodo-de-los-nudos">5.2 Método de los nudos<a class="headerlink" href="#52-metodo-de-los-nudos" title="Permanent link">&para;</a></h3>
+<p>Se analiza cada nudo aisladamente. Pasos:</p>
+<ol>
+<li>Calcular las <strong>reacciones en los apoyos</strong> con las ecuaciones de equilibrio global.</li>
+<li>Para cada nudo, plantear <strong>ΣFx = 0</strong> y <strong>ΣFy = 0</strong>.</li>
+<li>La fuerza que ejerce el nudo sobre la barra es igual y de sentido contrario a la que ejerce la barra sobre el nudo.</li>
+<li>Si el resultado es <strong>positivo → tracción</strong>; si es <strong>negativo → compresión</strong>.</li>
+</ol>
+<!-- 📷 IMAGEN 12: Diagrama de cuerpo libre de un nudo con varias barras -->
+<blockquote>
+<p><strong>[IMAGEN: Método de los nudos — diagrama de cuerpo libre]</strong></p>
+</blockquote>
+<h3 id="53-metodo-de-las-secciones-o-de-ritter">5.3 Método de las secciones (o de Ritter)<a class="headerlink" href="#53-metodo-de-las-secciones-o-de-ritter" title="Permanent link">&para;</a></h3>
+<p>Se usa cuando solo se quiere analizar una barra concreta. Pasos:</p>
+<ol>
+<li>Cortar la estructura por una sección que <strong>intersecte tres barras</strong>.</li>
+<li>Eliminar una de las dos partes resultantes.</li>
+<li>Aplicar las tres ecuaciones de equilibrio a la parte restante.</li>
+</ol>
+<h3 id="54-metodo-grafico-de-cremona">5.4 Método gráfico de Cremona<a class="headerlink" href="#54-metodo-grafico-de-cremona" title="Permanent link">&para;</a></h3>
+<p>Procedimiento gráfico basado en el método de los nudos. Pasos:</p>
+<ol>
+<li>Dibujar la estructura a escala con cargas y reacciones.</li>
+<li>Numerar las barras y asignar una letra a cada nudo.</li>
+<li>Dibujar el <strong>polígono de fuerzas exteriores</strong>.</li>
+<li>Recorrer los nudos en sentido horario donde concurran solo <strong>dos incógnitas</strong>.</li>
+<li>Las fuerzas que se <strong>acercan al nudo</strong> → compresión; las que se <strong>alejan</strong> → tracción.</li>
+<li>Medir las tensiones en el polígono de Cremona.</li>
+</ol>
+<!-- 📷 IMAGEN 13: Ejemplo de polígono de Cremona con la estructura y el diagrama gráfico -->
+<blockquote>
+<p><strong>[IMAGEN: Método gráfico de Cremona]</strong></p>
+</blockquote>
+<h2 id="formulario">📋 Formulario<a class="headerlink" href="#formulario" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Fórmula</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Componentes de una fuerza</td>
+<td>F_x = F·cos α ; F_y = F·sen α</td>
+</tr>
+<tr>
+<td>Módulo de la resultante</td>
+<td>F = √(F_x² + F_y²)</td>
+</tr>
+<tr>
+<td>Momento de una fuerza</td>
+<td>M = F · d (N·m)</td>
+</tr>
+<tr>
+<td>Centro de gravedad</td>
+<td>X_G = Σ(m_i · X_i) / M</td>
+</tr>
+<tr>
+<td>Isostática interior</td>
+<td>b = 2n − 3</td>
+</tr>
+<tr>
+<td>Esfuerzo cortante</td>
+<td>F_x = dM/dx</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
