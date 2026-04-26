@@ -1,0 +1,2762 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Apuntes y ejercicios PAU - Andalucía">
+      
+      
+      
+      
+        <link rel="prev" href="../teoria/">
+      
+      
+        <link rel="next" href="../pau_2425/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Curso 25/26 - Tecnología e Ingeniería II - 2º Bach</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#unidad-1-ensayo-en-materiales-problemas-pau-2526" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Tecnología e Ingeniería II - 2º Bach" class="md-header__button md-logo" aria-label="Tecnología e Ingeniería II - 2º Bach" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tecnología e Ingeniería II - 2º Bach
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Curso 25/26
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../teoria/" class="md-tabs__link">
+          
+  
+  
+  UD1 Ensayo en materiales
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud2_estructuras/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD2 Estructuras
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud3_maquinas_termicas/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD3 Máquinas térmicas
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud4_neumatica_hidraulica/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD4 Neumática e hidráulica
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud5_corriente_alterna/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD5 Corriente alterna
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud6_electronica_digital/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD6 Electrónica digital
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ud7_sistemas_automaticos/teoria/" class="md-tabs__link">
+          
+  
+  
+  UD7 Sistemas automáticos
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Tecnología e Ingeniería II - 2º Bach" class="md-nav__button md-logo" aria-label="Tecnología e Ingeniería II - 2º Bach" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tecnología e Ingeniería II - 2º Bach
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Inicio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD1 Ensayo en materiales
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD1 Ensayo en materiales
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#problema-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 1
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 3
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 4
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 5
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 6
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#problema-7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Problema 7
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD2 Estructuras
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD2 Estructuras
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud2_estructuras/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud2_estructuras/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud2_estructuras/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD3 Máquinas térmicas
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD3 Máquinas térmicas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud3_maquinas_termicas/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD4 Neumática e hidráulica
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD4 Neumática e hidráulica
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud4_neumatica_hidraulica/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD5 Corriente alterna
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD5 Corriente alterna
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud5_corriente_alterna/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD6 Electrónica digital
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD6 Electrónica digital
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud6_electronica_digital/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UD7 Sistemas automáticos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UD7 Sistemas automáticos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/teoria/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Teoría
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Problemas PAU
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Problemas PAU
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2526/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 25/26
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2425/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 24/25
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_2324/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 23/24
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/pau_1819/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Curso 18/19
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ud7_sistemas_automaticos/enlaces/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enlaces de interés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="unidad-1-ensayo-en-materiales-problemas-pau-2526"><strong>Unidad 1 - Ensayo en materiales - Problemas PAU - 25/26</strong><a class="headerlink" href="#unidad-1-ensayo-en-materiales-problemas-pau-2526" title="Permanent link">&para;</a></h1>
+<h3 id="problema-1">Problema 1<a class="headerlink" href="#problema-1" title="Permanent link">&para;</a></h3>
+<p>En una carpintería metálica han comprado una plancha de acero de dureza Brinell <strong>160 HB 5 650 20</strong> para fabricar la superficie de trabajo de una mesa de carnicería. Posteriormente, el cliente les ha pedido que la mesa tenga el doble de dureza, por lo que deciden aplicarle un temple a la lámina para endurecerla. Para comprobar el efecto que este tratamiento térmico ha tenido en las propiedades de la plancha, realizan varios ensayos de dureza Brinell antes y después del temple.</p>
+<p>Ayuda al operario que realiza los ensayos a analizar los resultados contestando las siguientes cuestiones:</p>
+<p>a) ¿Cuál es la profundidad y el diámetro de la huella que deja el ensayo normalizado en la plancha original?<br />
+b) Cuando el temple haya aumentado al doble la dureza de la plancha, ¿qué fuerza habrá que aplicar al acero templado para que el ensayo de dureza Brinell deje una huella igual que en el acero sin templar?</p>
+<details class="success">
+<summary>Problema 1 - solución</summary>
+<p>De la expresión normalizada <strong>160 HB 5 650 20</strong> extraemos los datos:</p>
+<ul>
+<li>HB = 160 Kp/mm²</li>
+<li>D = 5 mm (diámetro de la bola)</li>
+<li>F = 650 kp (carga aplicada)</li>
+<li>t = 20 s (tiempo de aplicación)</li>
+</ul>
+<p><strong>a) Diámetro y profundidad de la huella</strong></p>
+<p>Despejamos d de la fórmula de la dureza Brinell:</p>
+<div class="arithmatex">\[HB = \frac{2F}{\pi \cdot D \cdot \left(D - \sqrt{D^2 - d^2}\right)}\]</div>
+<div class="arithmatex">\[160 = \frac{2 \cdot 650}{\pi \cdot 5 \cdot \left(5 - \sqrt{25 - d^2}\right)}\]</div>
+<div class="arithmatex">\[\pi \cdot 5 \cdot \left(5 - \sqrt{25 - d^2}\right) = \frac{1300}{160} = 8{,}125\]</div>
+<div class="arithmatex">\[5 - \sqrt{25 - d^2} = \frac{8{,}125}{5\pi} = 0{,}517\]</div>
+<div class="arithmatex">\[\sqrt{25 - d^2} = 4{,}483 \implies 25 - d^2 = 20{,}10 \implies d^2 = 4{,}90\]</div>
+<div class="arithmatex">\[\boxed{d = 2{,}21 \text{ mm}}\]</div>
+<p>La profundidad de la huella:</p>
+<div class="arithmatex">\[f = \frac{D - \sqrt{D^2 - d^2}}{2} = \frac{5 - 4{,}483}{2} = \frac{0{,}517}{2}\]</div>
+<div class="arithmatex">\[\boxed{f = 0{,}258 \text{ mm}}\]</div>
+<p><strong>b) Fuerza para el acero templado</strong></p>
+<p>Tras el temple la dureza es el doble: HB' = 320.</p>
+<p>La huella debe ser igual (mismo d = 2,21 mm, mismo D = 5 mm), por lo que la fórmula queda:</p>
+<div class="arithmatex">\[HB' = \frac{2F'}{\pi \cdot D \cdot \left(D - \sqrt{D^2 - d^2}\right)}\]</div>
+<p>Como el denominador es el mismo que antes:</p>
+<div class="arithmatex">\[\frac{HB'}{HB} = \frac{F'}{F} \implies F' = F \cdot \frac{HB'}{HB} = 650 \cdot \frac{320}{160} = 1300 \text{ kp}\]</div>
+<p>Convirtiendo a Newtons:</p>
+<div class="arithmatex">\[\boxed{F' = 1300 \text{ kp} \cdot 9{,}81 = 12.753 \text{ N}}\]</div>
+</details>
+<hr />
+<h3 id="problema-2">Problema 2<a class="headerlink" href="#problema-2" title="Permanent link">&para;</a></h3>
+<p>En un ensayo de tracción efectuado a una probeta cilíndrica de un aluminio que se usará para la fabricación del cuadro de bicicletas, se ha obtenido el diagrama tensión-deformación representado en la figura, donde el punto A señala el límite elástico.</p>
+<p><img alt="Diagrama tensión-deformación" src="../images/13.png" /></p>
+<p>Determinar:</p>
+<p>a) El módulo de elasticidad.<br />
+b) El alargamiento de la probeta si se aplica una carga de 20.000 N, sabiendo que su diámetro es 25 mm y su longitud 75 mm.<br />
+c) La carga máxima que soporta esta probeta sin deformarse permanentemente.</p>
+<details class="success">
+<summary>Problema 2 - solución</summary>
+<p>Del diagrama tensión-deformación leemos:</p>
+<ul>
+<li>Punto A (límite elástico): σ_E = 225 MPa, ε = 0,005</li>
+</ul>
+<p><strong>a) Módulo de elasticidad</strong></p>
+<p>Aplicando la Ley de Hooke en la zona proporcional:</p>
+<div class="arithmatex">\[E = \frac{\sigma}{\varepsilon} = \frac{225 \text{ MPa}}{0{,}005}\]</div>
+<div class="arithmatex">\[\boxed{E = 45.000 \text{ MPa} = 45 \text{ GPa}}\]</div>
+<p><strong>b) Alargamiento para F = 20.000 N</strong></p>
+<p>Calculamos la sección de la probeta:</p>
+<div class="arithmatex">\[A_0 = \frac{\pi \cdot d^2}{4} = \frac{\pi \cdot 25^2}{4} = 490{,}87 \text{ mm}^2\]</div>
+<p>Tensión aplicada:</p>
+<div class="arithmatex">\[\sigma = \frac{F}{A_0} = \frac{20.000}{490{,}87} = 40{,}74 \text{ MPa}\]</div>
+<p>Deformación unitaria (Ley de Hooke):</p>
+<div class="arithmatex">\[\varepsilon = \frac{\sigma}{E} = \frac{40{,}74}{45.000} = 9{,}05 \cdot 10^{-4}\]</div>
+<p>Alargamiento:</p>
+<div class="arithmatex">\[\Delta l = \varepsilon \cdot l_0 = 9{,}05 \cdot 10^{-4} \cdot 75\]</div>
+<div class="arithmatex">\[\boxed{\Delta l = 0{,}068 \text{ mm}}\]</div>
+<p><strong>c) Carga máxima sin deformación permanente</strong></p>
+<p>La carga máxima sin deformación permanente es la que corresponde al límite elástico σ_E = 225 MPa:</p>
+<div class="arithmatex">\[F_{max} = \sigma_E \cdot A_0 = 225 \cdot 490{,}87\]</div>
+<div class="arithmatex">\[\boxed{F_{max} = 110.446 \text{ N} \approx 110{,}4 \text{ kN}}\]</div>
+</details>
+<hr />
+<h3 id="problema-3">Problema 3<a class="headerlink" href="#problema-3" title="Permanent link">&para;</a></h3>
+<p>En un laboratorio se realiza un ensayo de dureza Brinell y otro de dureza Vickers a una misma muestra de acero que se utilizará para la fabricación de rastrillos de jardinería. Se pide:</p>
+<p>a) Determinar la expresión normalizada de la dureza Vickers si en el ensayo se emplea una punta piramidal aplicando una carga de 120 kp durante 10 segundos y se obtiene como resultado una huella con diagonales de 1,25 mm y 1,23 mm.<br />
+b) Determinar la expresión normalizada de la dureza Brinell si en el ensayo se obtiene una huella de 2,5 mm de diámetro aplicando una carga de 725 kp con un penetrador de 5 mm de diámetro durante 20 segundos.<br />
+c) A la vista de los datos y el resultado del ensayo de la dureza Brinell, ¿se puede considerar válido dicho resultado?</p>
+<details class="success">
+<summary>Problema 3 - solución</summary>
+<p><strong>a) Dureza Vickers</strong></p>
+<p>Calculamos la diagonal media:</p>
+<div class="arithmatex">\[d = \frac{d_1 + d_2}{2} = \frac{1{,}25 + 1{,}23}{2} = 1{,}24 \text{ mm}\]</div>
+<p>Aplicamos la fórmula de la dureza Vickers:</p>
+<div class="arithmatex">\[HV = \frac{1{,}854 \cdot F}{d^2} = \frac{1{,}854 \cdot 120}{1{,}24^2} = \frac{222{,}48}{1{,}5376}\]</div>
+<div class="arithmatex">\[\boxed{HV = 144{,}7 \approx 145 Kp/mm²}\]</div>
+<p>Expresión normalizada: <strong>145 HV 120 10</strong></p>
+<p><strong>b) Dureza Brinell</strong></p>
+<div class="arithmatex">\[HB = \frac{2F}{\pi \cdot D \cdot \left(D - \sqrt{D^2 - d^2}\right)} = \frac{2 \cdot 725}{\pi \cdot 5 \cdot \left(5 - \sqrt{25 - 6{,}25}\right)}\]</div>
+<div class="arithmatex">\[= \frac{1450}{\pi \cdot 5 \cdot (5 - \sqrt{18{,}75})} = \frac{1450}{\pi \cdot 5 \cdot (5 - 4{,}330)} = \frac{1450}{\pi \cdot 5 \cdot 0{,}670}\]</div>
+<div class="arithmatex">\[= \frac{1450}{10{,}525}\]</div>
+<div class="arithmatex">\[\boxed{HB = 137{,}8 \approx 138 Kp/mm²}\]</div>
+<p>Expresión normalizada: <strong>138 HB 5 725 20</strong></p>
+<p><strong>c) Validez del ensayo Brinell</strong></p>
+<p>Para que el ensayo Brinell sea válido, el diámetro de la huella debe estar entre 0,24·D y 0,60·D (esta es una regla fundamental en ciencia de materiales para garantizar que los resultados de dureza sean precisos y fiables):</p>
+<div class="arithmatex">\[0{,}24 \cdot D = 0{,}24 \cdot 5 = 1{,}2 \text{ mm}\]</div>
+<div class="arithmatex">\[0{,}60 \cdot D = 0{,}60 \cdot 5 = 3{,}0 \text{ mm}\]</div>
+<p>Como d = 2,5 mm está comprendido entre 1,2 mm y 3,0 mm:</p>
+<div class="arithmatex">\[\boxed{\text{El resultado es válido}}\]</div>
+</details>
+<hr />
+<h3 id="problema-4">Problema 4<a class="headerlink" href="#problema-4" title="Permanent link">&para;</a></h3>
+<p>La empresa que está haciendo la obra de la estación de autobuses de Almería ha subcontratado a otra empresa que fabrica y monta estructuras metálicas para que haga la cubierta de la zona donde los autobuses se estacionan. Como en esa zona hay riesgo de que algún vehículo impacte con los pilares de la estructura, el proyecto técnico debe contener un estudio de la tenacidad a la fractura de estos pilares. Para hacer este estudio se realizan una serie de ensayos Charpy sacando varias probetas del acero de las vigas. Se usa un péndulo con una masa de 4 kg que se suelta desde 1 m de altura. Se pide:</p>
+<p>a) Calcular la resiliencia del material de la viga si al hacer un ensayo con una probeta de sección cuadrada de 1,5 cm de lado con una entalla en V de 2 mm de profundidad el martillo sube hasta los 60 cm tras el impacto.<br />
+b) Si al hacer otra probeta para repetir el ensayo se comete un error en la fabricación y la profundidad de la entalla es de 4 mm, en la misma sección cuadrada, ¿a qué altura subirá el péndulo para que la resiliencia sea la misma?<br />
+c) Calcular y comparar la energía absorbida en la rotura de la probeta con 2 mm y con 4 mm de profundidad de entalla.</p>
+<details class="success">
+<summary>Problema 4 - solución</summary>
+<p><strong>Datos:</strong></p>
+<ul>
+<li>m = 4 kg, g = 9,81 m/s²</li>
+<li>h₁ = 1 m, h₂ = 0,60 m</li>
+<li>Sección cuadrada: lado = 1,5 cm = 15 mm</li>
+<li>Entalla en V: profundidad = 2 mm</li>
+</ul>
+<p><strong>a) Resiliencia con entalla de 2 mm</strong></p>
+<p>Energía absorbida:</p>
+<div class="arithmatex">\[E_{abs} = m \cdot g \cdot (h_1 - h_2) = 4 \cdot 9{,}81 \cdot (1 - 0{,}60) = 4 \cdot 9{,}81 \cdot 0{,}40\]</div>
+<div class="arithmatex">\[E_{abs} = 15{,}70 \text{ J}\]</div>
+<p>Sección efectiva (en la zona de la entalla):</p>
+<div class="arithmatex">\[S = (15 - 2) \cdot 15 = 13 \cdot 15 = 195 \text{ mm}^2 = 1{,}95 \text{ cm}^2\]</div>
+<p>Resiliencia:</p>
+<div class="arithmatex">\[K = \frac{E_{abs}}{S} = \frac{15{,}70}{1{,}95} = 8{,}05 \text{ J/cm}^2\]</div>
+<div class="arithmatex">\[\boxed{K = 8{,}05 \text{ J/cm}^2}\]</div>
+<p><strong>b) Altura con entalla de 4 mm para la misma resiliencia</strong></p>
+<p>Nueva sección efectiva con entalla de 4 mm:</p>
+<div class="arithmatex">\[S' = (15 - 4) \cdot 15 = 11 \cdot 15 = 165 \text{ mm}^2 = 1{,}65 \text{ cm}^2\]</div>
+<p>Energía absorbida necesaria para K = 8,05 J/cm²:</p>
+<div class="arithmatex">\[E'_{abs} = K \cdot S' = 8{,}05 \cdot 1{,}65 = 13{,}28 \text{ J}\]</div>
+<p>Altura que alcanza el péndulo:</p>
+<div class="arithmatex">\[h_2' = h_1 - \frac{E'_{abs}}{m \cdot g} = 1 - \frac{13{,}28}{4 \cdot 9{,}81} = 1 - 0{,}338\]</div>
+<div class="arithmatex">\[\boxed{h_2' = 0{,}662 \text{ m} \approx 66{,}2 \text{ cm}}\]</div>
+<p><strong>c) Comparación de energías absorbidas</strong></p>
+<ul>
+<li>Entalla 2 mm: <span class="arithmatex">\(E_{abs} = 15{,}70\)</span> J</li>
+<li>Entalla 4 mm: <span class="arithmatex">\(E'_{abs} = 13{,}28\)</span> J</li>
+</ul>
+<p>La probeta con entalla de 4 mm absorbe <strong>menos energía</strong> (13,28 J &lt; 15,70 J) porque su sección efectiva es menor. Al tener menos material que romper, el péndulo pierde menos energía en el impacto.</p>
+</details>
+<hr />
+<h3 id="problema-5">Problema 5<a class="headerlink" href="#problema-5" title="Permanent link">&para;</a></h3>
+<p>En un almacén de envasado de fruta tienen una carretilla transportadora con capacidad para 6 cajas. El dueño del almacén ha detectado que la productividad mejoraría si tuvieran una carretilla para transportar 10 cajas, y encarga un proyecto para modificar la plataforma de la carretilla. El proyectista decide usar barras de acero de sección cuadrada de 2,5 cm de lado y 1 m de longitud, pero para el cálculo de la estructura necesita conocer las propiedades mecánicas del material y realiza un ensayo de tracción. Observa que con una fuerza mayor de 127 kN la barra deja de recuperar su longitud inicial tras el ensayo, pasando del régimen elástico al plástico, y para esta carga su longitud aumenta 0,96 mm. También ha visto que la barra se rompe cuando se le aplica una fuerza de 362 kN.</p>
+<p>Ayuda al proyectista a calcular los siguientes parámetros mecánicos:</p>
+<p>a) El módulo elástico del material.<br />
+b) La deformación unitaria cuando se le aplica una fuerza de 48 kN.<br />
+c) La tensión de rotura.</p>
+<details class="success">
+<summary>Problema 5 - solución</summary>
+<p><strong>Datos:</strong></p>
+<ul>
+<li>Sección cuadrada: lado = 2,5 cm = 25 mm → A₀ = 25² = 625 mm²</li>
+<li>Longitud: l₀ = 1 m = 1000 mm</li>
+<li>Límite elástico: F_E = 127 kN, Δl = 0,96 mm</li>
+<li>Fuerza de rotura: F_R = 362 kN</li>
+</ul>
+<p><strong>a) Módulo elástico</strong></p>
+<p>Tensión en el límite elástico:</p>
+<div class="arithmatex">\[\sigma_E = \frac{F_E}{A_0} = \frac{127.000}{625} = 203{,}2 \text{ MPa}\]</div>
+<p>Deformación unitaria en el límite elástico:</p>
+<div class="arithmatex">\[\varepsilon_E = \frac{\Delta l}{l_0} = \frac{0{,}96}{1000} = 9{,}6 \cdot 10^{-4}\]</div>
+<p>Módulo elástico:</p>
+<div class="arithmatex">\[E = \frac{\sigma_E}{\varepsilon_E} = \frac{203{,}2}{9{,}6 \cdot 10^{-4}}\]</div>
+<div class="arithmatex">\[\boxed{E = 211.667 \text{ MPa} \approx 212 \text{ GPa}}\]</div>
+<p><strong>b) Deformación unitaria para F = 48 kN</strong></p>
+<p>Como 48 kN &lt; 127 kN, estamos en zona elástica, por lo que aplicamos la Ley de Hooke:</p>
+<div class="arithmatex">\[\sigma = \frac{F}{A_0} = \frac{48.000}{625} = 76{,}8 \text{ MPa}\]</div>
+<div class="arithmatex">\[\varepsilon = \frac{\sigma}{E} = \frac{76{,}8}{211.667}\]</div>
+<div class="arithmatex">\[\boxed{\varepsilon = 3{,}63 \cdot 10^{-4}}\]</div>
+<p><strong>c) Tensión de rotura</strong></p>
+<div class="arithmatex">\[\sigma_R = \frac{F_R}{A_0} = \frac{362.000}{625}\]</div>
+<div class="arithmatex">\[\boxed{\sigma_R = 579{,}2 \text{ MPa}}\]</div>
+</details>
+<hr />
+<h3 id="problema-6">Problema 6<a class="headerlink" href="#problema-6" title="Permanent link">&para;</a></h3>
+<p>Para medir la dureza de una plancha de acero se realiza un ensayo Vickers aplicando una carga de 40 kp durante 20 s, obteniéndose la huella de la figura.</p>
+<p><img alt="Huella ensayo Vickers x50" src="../images/14.png" /></p>
+<p>a) Si la imagen está aumentada 50 veces, ¿cuánto mide la diagonal de la huella que se necesita para calcular la dureza Vickers?<br />
+b) Calcular la dureza Vickers de la plancha y escribir su valor normalizado.</p>
+<details class="success">
+<summary>Problema 6 - solución</summary>
+<p><strong>Datos:</strong></p>
+<ul>
+<li>F = 40 kp, t = 20 s</li>
+<li>Ampliación de la imagen: ×50</li>
+<li>Del diagrama se lee la diagonal ampliada: d_imagen = 30 mm (valor leído en la escala de la figura)</li>
+</ul>
+<p><strong>a) Diagonal real de la huella</strong></p>
+<div class="arithmatex">\[d_{real} = \frac{d_{imagen}}{ampliaci\acute{o}n} = \frac{30}{50} = 0{,}6 \text{ mm}\]</div>
+<div class="arithmatex">\[\boxed{d = 0{,}6 \text{ mm}}\]</div>
+<p><strong>b) Dureza Vickers</strong></p>
+<div class="arithmatex">\[HV = \frac{1{,}854 \cdot F}{d^2} = \frac{1{,}854 \cdot 40}{0{,}6^2} = \frac{74{,}16}{0{,}36}\]</div>
+<div class="arithmatex">\[\boxed{HV = 206 Kp/mm²}\]</div>
+<p>Expresión normalizada: <strong>206 HV 40 20</strong></p>
+</details>
+<hr />
+<h3 id="problema-7">Problema 7<a class="headerlink" href="#problema-7" title="Permanent link">&para;</a></h3>
+<p>Una fábrica de muebles metálicos ha comprado una plancha de acero inoxidable para hacer una mesa para la cocina del restaurante Burladero en Sevilla, y necesita conocer su dureza para optimizar el diseño. Para ello, realiza un ensayo Vickers aplicando una carga de 40 kp durante 20 s y obtiene la huella de la figura de la derecha vista con un microscopio que aumenta la imagen 50 veces.</p>
+<p><img alt="Huella ensayo Vickers x50" src="../images/14.png" /></p>
+<p>a) ¿Cuánto mide la diagonal de la huella que se necesita para calcular la dureza Vickers?<br />
+b) Calcular la dureza Vickers de la plancha y escribir su valor normalizado.</p>
+<details class="success">
+<summary>Problema 7 - solución</summary>
+<p>Este problema es análogo al Problema 6 con los mismos datos (F = 40 kp, t = 20 s, ampliación ×50). La solución es idéntica:</p>
+<p><strong>a) Diagonal de la huella</strong></p>
+<div class="arithmatex">\[d_{real} = \frac{d_{imagen}}{50} = \frac{30}{50} = 0{,}6 \text{ mm}\]</div>
+<div class="arithmatex">\[\boxed{d = 0{,}6 \text{ mm}}\]</div>
+<p><strong>b) Dureza Vickers</strong></p>
+<div class="arithmatex">\[HV = \frac{1{,}854 \cdot 40}{0{,}6^2} = \frac{74{,}16}{0{,}36}\]</div>
+<p>$<span class="arithmatex">\(\boxed{HV = 206 Kp/mm²\)</span>$}</p>
+<p>Expresión normalizada: <strong>206 HV 40 20</strong></p>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "toc.integrate", "search.suggest"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
