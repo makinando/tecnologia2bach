@@ -1,0 +1,91 @@
+site_name: Tecnología e Ingeniería II - 2º Bach
+site_description: Apuntes y ejercicios PAU - Andalucía
+docs_dir: docs
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - search.suggest
+  
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+  - md_in_html
+  
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Inicio: index.md
+  - UD1 Ensayo en materiales:
+    - Teoría: ud1_materiales/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud1_materiales/pau_2526.md
+      - Curso 24/25: ud1_materiales/pau_2425.md
+      - Curso 23/24: ud1_materiales/pau_2324.md
+      - Curso 18/19: ud1_materiales/pau_1819.md
+      - Enlaces de interés: ud1_materiales/enlaces.md
+  - UD2 Estructuras:
+    - Teoría: ud2_estructuras/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud2_estructuras/pau_2526.md
+      - Enlaces de interés: ud2_estructuras/enlaces.md
+  - UD3 Máquinas térmicas:
+    - Teoría: ud3_maquinas_termicas/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud3_maquinas_termicas/pau_2526.md
+      - Curso 24/25: ud3_maquinas_termicas/pau_2425.md
+      - Curso 23/24: ud3_maquinas_termicas/pau_2324.md
+      - Curso 18/19: ud3_maquinas_termicas/pau_1819.md
+      - Enlaces de interés: ud3_maquinas_termicas/enlaces.md
+  - UD4 Neumática e hidráulica:
+    - Teoría: ud4_neumatica_hidraulica/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud4_neumatica_hidraulica/pau_2526.md
+      - Curso 24/25: ud4_neumatica_hidraulica/pau_2425.md
+      - Curso 23/24: ud4_neumatica_hidraulica/pau_2324.md
+      - Curso 18/19: ud4_neumatica_hidraulica/pau_1819.md
+      - Enlaces de interés: ud4_neumatica_hidraulica/enlaces.md
+  - UD5 Corriente alterna:
+    - Teoría: ud5_corriente_alterna/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud5_corriente_alterna/pau_2526.md
+      - Curso 24/25: ud5_corriente_alterna/pau_2425.md
+      - Curso 23/24: ud5_corriente_alterna/pau_2324.md
+      - Curso 18/19: ud5_corriente_alterna/pau_1819.md
+      - Enlaces de interés: ud5_corriente_alterna/enlaces.md
+  - UD6 Electrónica digital:
+    - Teoría: ud6_electronica_digital/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud6_electronica_digital/pau_2526.md
+      - Curso 24/25: ud6_electronica_digital/pau_2425.md
+      - Curso 23/24: ud6_electronica_digital/pau_2324.md
+      - Curso 18/19: ud6_electronica_digital/pau_1819.md
+      - Enlaces de interés: ud6_electronica_digital/enlaces.md
+  - UD7 Sistemas automáticos:
+    - Teoría: ud7_sistemas_automaticos/teoria.md
+    - Problemas PAU:
+      - Curso 25/26: ud7_sistemas_automaticos/pau_2526.md
+      - Curso 24/25: ud7_sistemas_automaticos/pau_2425.md
+      - Curso 23/24: ud7_sistemas_automaticos/pau_2324.md
+      - Curso 18/19: ud7_sistemas_automaticos/pau_1819.md
+      - Enlaces de interés: ud7_sistemas_automaticos/enlaces.md
+  
