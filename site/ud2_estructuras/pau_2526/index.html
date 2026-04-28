@@ -2555,11 +2555,164 @@
 <p>a) Las reacciones en ambos apoyos en condiciones de equilibrio estático.</p>
 <p>b) El momento flector máximo en la viga.</p>
 <p><img alt="problema 1" src="../images/14.png" /></p>
+<details class="success">
+<summary>Problema 1 - solución</summary>
+<p><strong>Datos:</strong></p>
+<ul>
+<li>Carga puntual: <span class="arithmatex">\(P = 16000 \text{ N}\)</span></li>
+<li>Distancia A-C: <span class="arithmatex">\(a = 1,5 \text{ m}\)</span></li>
+<li>Distancia C-B: <span class="arithmatex">\(b = 4,5 \text{ m}\)</span></li>
+<li>Luz total: <span class="arithmatex">\(L = 6 \text{ m}\)</span></li>
+<li>Apoyo A: fijo (articulado)</li>
+<li>Apoyo B: móvil (rodillo)</li>
+</ul>
+<p><strong>Diagrama de sólido libre:</strong></p>
+<p><img alt="problema 1" src="../images/22.png" /></p>
+<p><strong>a) Reacciones en ambos apoyos en condiciones de equilibrio estático:</strong></p>
+<p>Como no hay fuerzas horizontales aplicadas:</p>
+<div class="arithmatex">\[R_{Ax} = 0\]</div>
+<p><strong>1) Equilibrio de fuerzas verticales:</strong></p>
+<div class="arithmatex">\[\sum F_y = 0 \Rightarrow R_{Ay} + R_{By} - P = 0\]</div>
+<div class="arithmatex">\[R_{Ay} + R_{By} = 16000 \text{ N}\]</div>
+<p><strong>2) Equilibrio de momentos (tomando como referencia el punto A):</strong></p>
+<div class="arithmatex">\[\sum M_A = 0 \Rightarrow R_{By} \cdot 6 - P \cdot 1,5 = 0\]</div>
+<div class="arithmatex">\[R_{By} \cdot 6 = 16000 \cdot 1,5 = 24000\]</div>
+<div class="arithmatex">\[R_{By} = \frac{24000}{6} = \boxed{4000 \text{ N}}\]</div>
+<p><strong>3) Calculamos <span class="arithmatex">\(R_{Ay}\)</span>:</strong></p>
+<div class="arithmatex">\[R_{Ay} = 16000 - R_{By} = 16000 - 4000 = \boxed{12000 \text{ N}}\]</div>
+<p><strong>b) Momento flector máximo en la viga:</strong></p>
+<p><strong>Ecuaciones de momentos por tramos:</strong></p>
+<p><strong>Tramo AC</strong> <span class="arithmatex">\((0 \leq x \leq 1,5 \text{ m})\)</span>:</p>
+<p><img alt="problema 1" src="../images/23.png" /></p>
+<div class="arithmatex">\[M(x) = R_{Ay} \cdot x = 12000 \cdot x\]</div>
+<p>En <span class="arithmatex">\(x = 0\)</span>: <span class="arithmatex">\(M(0) = 0\)</span></p>
+<p>En <span class="arithmatex">\(x = 1,5\)</span>: <span class="arithmatex">\(M(1,5) = 12000 \cdot 1,5 = 18000 \text{ N·m}\)</span></p>
+<p><strong>Tramo CB</strong> <span class="arithmatex">\((1,5 \leq x \leq 6 \text{ m})\)</span>:</p>
+<p><img alt="problema 1" src="../images/24.png" /></p>
+<div class="arithmatex">\[M(x) = R_{Ay} \cdot x - P \cdot (x - 1,5)\]</div>
+<p>En <span class="arithmatex">\(x = 1,5\)</span>: <span class="arithmatex">\(M(1,5) = 12000 \cdot 1,5 - 0 = 18000 \text{ N·m}\)</span> ✓ (continuidad)</p>
+<p>En <span class="arithmatex">\(x = 6\)</span>: <span class="arithmatex">\(M(6) = 12000 \cdot 6 - 16000 \cdot 4,5 = 72000 - 72000 = 0\)</span> ✓</p>
+<p><strong>Momento flector máximo:</strong></p>
+<p>Ocurre en el punto C (donde está aplicada la carga), ya que la función cambia de pendiente:</p>
+<div class="arithmatex">\[\boxed{M_{max} = 18000 \text{ N·m} = 18 \text{ kN·m}}\]</div>
+<p><strong>Resumen de resultados:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(R_{Ay}\)</span></td>
+<td><span class="arithmatex">\(12000 \text{ N} = 12 \text{ kN}\)</span> (↑)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{By}\)</span></td>
+<td><span class="arithmatex">\(4000 \text{ N} = 4 \text{ kN}\)</span> (↑)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(M_{max}\)</span></td>
+<td><span class="arithmatex">\(18000 \text{ N·m} = 18 \text{ kN·m}\)</span> (en el punto C)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ecuaciones de esfuerzos por tramos:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Tramo</th>
+<th>Cortante V</th>
+<th>Momento M</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AC <span class="arithmatex">\((0 \leq x \leq 1,5)\)</span></td>
+<td><span class="arithmatex">\(V = +12000 \text{ N}\)</span></td>
+<td><span class="arithmatex">\(M = 12000x\)</span></td>
+</tr>
+<tr>
+<td>CB <span class="arithmatex">\((1,5 \leq x \leq 6)\)</span></td>
+<td><span class="arithmatex">\(V = -4000 \text{ N}\)</span></td>
+<td><span class="arithmatex">\(M = 18000 - 4000(x-1,5)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Diagramas esfuerzos cortantes:</strong></p>
+<p><img alt="problema 1" src="../images/25.png" /></p>
+<p><strong>Diagramas momentos flectores:</strong></p>
+<p><img alt="problema 1" src="../images/26.png" /></p>
+</details>
 <h3 id="problema-2">Problema 2<a class="headerlink" href="#problema-2" title="Permanent link">&para;</a></h3>
 <p>En la figura dse representa la estructura que se ha montado para colgar un cartel que pesa 513 N en la fachada de un edificio. La barra horizontal de la que cuelga el cartel mide 2,80 m de largo, su masa es despreciable y se sujeta a la pared con un apoyo fijo (A). El otro extremo de la barra (B) se sujeta con un cable tensor que se fija a la pared 3,2 m por encima del apoyo. El cartel se sujeta a la barra en un único punto (C) situado a 95 cm del extremo derecho de la barra. Se pide:</p>
 <p>a)​ Dibujar el diagrama del sólido libre.</p>
 <p>b)​ Calcular la tensión resultante que está soportando el cable tensor.</p>
 <p><img alt="problema 2" src="../images/15.png" /></p>
+<details class="success">
+<summary>Problema 2 - solución</summary>
+<p><strong>Datos:</strong></p>
+<ul>
+<li>Longitud barra: <span class="arithmatex">\(L = 2,80 \text{ m}\)</span></li>
+<li>Altura cable sobre apoyo: <span class="arithmatex">\(h = 3,2 \text{ m}\)</span></li>
+<li>Masa cartel: <span class="arithmatex">\(m = 52,3 \text{ kg}\)</span></li>
+<li>Peso cartel: <span class="arithmatex">\(P = m \cdot g = 52,3 \cdot 9,8 = 512,54 \text{ N} \approx 513 \text{ N}\)</span></li>
+<li>Posición punto C, a <span class="arithmatex">\(95 \text{ cm} = 0,95 \text{ m}\)</span> del extremo derecho B</li>
+<li>Distancia A-C: <span class="arithmatex">\(2,80 - 0,95 = 1,85 \text{ m}\)</span></li>
+<li>Apoyo A: fijo (articulado) en la pared</li>
+<li>Cable: desde pared (0, 3,2) hasta extremo B (2,8, 1)</li>
+</ul>
+<p><strong>a) Diagrama del sólido libre:</strong></p>
+<p><img alt="problema 2" src="../images/27.png" /></p>
+<p><strong>b) Tensión resultante que está soportando el cable:</strong></p>
+<p><strong>Equilibrio de momentos respecto al punto A:</strong></p>
+<p>(Tomamos momentos positivos en sentido antihorario)</p>
+<div class="arithmatex">\[\sum M_A = 0 \Rightarrow T \cdot \sin(\theta) \cdot 2,8 - P \cdot 1,85 = 0\]</div>
+<p>El momento de la tensión respecto a A:
+- Brazo de palanca: distancia horizontal desde A a la línea de acción = <span class="arithmatex">\(2,8 \text{ m}\)</span>
+- Componente vertical de T: <span class="arithmatex">\(T \cdot \sin(\theta)\)</span></p>
+<div class="arithmatex">\[T \cdot 0,754 \cdot 2,8 = 513 \cdot 1,85\]</div>
+<div class="arithmatex">\[T \cdot 2,111 = 949,05\]</div>
+<div class="arithmatex">\[T = \frac{949,05}{2,111} = \boxed{449,6 \text{ N} \approx 450 \text{ N}}\]</div>
+<p><strong>Comprobación con componentes:</strong></p>
+<p><strong>Equilibrio de fuerzas horizontales:</strong></p>
+<div class="arithmatex">\[\sum F_x = 0 \Rightarrow R_{Ax} - T \cdot \cos(\theta) = 0\]</div>
+<div class="arithmatex">\[R_{Ax} = 449,6 \cdot 0,660 = 296,7 \text{ N}\]</div>
+<p><strong>Equilibrio de fuerzas verticales:</strong></p>
+<div class="arithmatex">\[\sum F_y = 0 \Rightarrow R_{Ay} + T \cdot \sin(\theta) - P = 0\]</div>
+<div class="arithmatex">\[R_{Ay} = 513 - 449,6 \cdot 0,754 = 513 - 339 = 174 \text{ N}\]</div>
+<p><strong>Resumen de resultados:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Magnitud</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tensión cable <span class="arithmatex">\(T\)</span></td>
+<td><span class="arithmatex">\(\boxed{450 \text{ N}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{Ax}\)</span></td>
+<td><span class="arithmatex">\(296,7 \text{ N}\)</span> (→)</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(R_{Ay}\)</span></td>
+<td><span class="arithmatex">\(174 \text{ N}\)</span> (↑)</td>
+</tr>
+<tr>
+<td>Ángulo cable <span class="arithmatex">\(\theta\)</span></td>
+<td><span class="arithmatex">\(48,81°\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nota:</strong> La tensión del cable se puede calcular también por equilibrio de momentos respecto a B:</p>
+<div class="arithmatex">\[\sum M_B = 0 \Rightarrow -R_{Ay} \cdot 2,8 + P \cdot 0,95 = 0\]</div>
+<div class="arithmatex">\[R_{Ay} = \frac{513 \cdot 0,95}{2,8} = 174 \text{ N} \checkmark\]</div>
+</details>
 <h3 id="problema-3">Problema 3<a class="headerlink" href="#problema-3" title="Permanent link">&para;</a></h3>
 <p>En el sistema en equilibrio que se muestra en la figura adjunta, la viga uniforme de longitud L pesa 0,60 kN y está sujeta a un apoyo articulado fijo en el punto A y a una cuerda tensora en el punto B. En el otro extremo, la viga sujeta un peso de 0,80 kN.</p>
 <p><img alt="problema 3" src="../images/16.png" /></p>
