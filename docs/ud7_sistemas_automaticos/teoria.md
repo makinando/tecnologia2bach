@@ -13,6 +13,6 @@ aeroespaciales.
 
 ---
 
-[📥 Descargar PDF](https://drive.google.com/uc?export=download&id=1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL){ .md-button .md-button--primary }
+[Descargar PDF](https://drive.google.com/uc?export=download&id=1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL){ .md-button .md-button--primary }
 
-[👁️ Ver en Drive](https://drive.google.com/file/d/1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL/view){ .md-button }
+[Ver en Drive](https://drive.google.com/file/d/1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL/view){ .md-button }
