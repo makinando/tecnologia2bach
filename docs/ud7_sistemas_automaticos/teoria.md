@@ -17,4 +17,8 @@ aeroespaciales.
 
 ---
 
-[Funciones de transferencia](https://drive.google.com/file/d/1olquOXEu2suujmKE8G74Ur7383shB4BH/view?usp=sharing){ .md-button .md-button--primary }
+[Función de transferencia](https://drive.google.com/file/d/1olquOXEu2suujmKE8G74Ur7383shB4BH/view?usp=sharing){ .md-button }
+
+---
+
+[Ejercicios resueltos FT](https://drive.google.com/drive/folders/10ry21rDaCgGwn3TzKcaeIyraOcwE-jKs?usp=drive_link){ .md-button .md-button--primary }
