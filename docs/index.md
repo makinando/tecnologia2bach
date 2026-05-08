@@ -33,14 +33,6 @@ Cada unidad didáctica incluye los siguientes apartados:
 
 ---
 
-## 📥 Zona de Descargas
-
-En esta sección encontrarás todo el material del curso listo para imprimir o consultar.
-
-[📥 **Descargas**](descargas.md)
-
----
-
 ## 👨‍🏫 Autoría
 
 Departamento de Tecnología · IES *IES Luis Vélez de Guevara*
