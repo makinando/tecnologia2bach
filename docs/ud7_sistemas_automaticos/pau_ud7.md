@@ -1,4 +1,4 @@
-# Problemas PAU — Curso 25/26
+# Problemas PAU — Unidad 7 Sistemas automáticos
 
 ## 📋 Problemas
 

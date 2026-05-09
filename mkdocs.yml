@@ -37,16 +37,11 @@ nav:
   - Inicio: index.md
   - UD1 Ensayo en materiales:
     - Teoría: ud1_materiales/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud1_materiales/pau_2526.md
-      - Curso 24/25: ud1_materiales/pau_2425.md
-      - Curso 23/24: ud1_materiales/pau_2324.md
-      - Curso 18/19: ud1_materiales/pau_1819.md
+    - Problemas PAU: ud1_materiales/pau_ud1.md
     - Enlaces de interés: ud1_materiales/enlaces.md
   - UD2 Estructuras:
     - Teoría: ud2_estructuras/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud2_estructuras/pau_2526.md
+    - Problemas PAU: ud2_estructuras/pau_ud2.md
     - Enlaces de interés: ud2_estructuras/enlaces.md
   - UD3 Máquinas térmicas:
     - Teoría: ud3_maquinas_termicas/teoria.md
@@ -82,7 +77,6 @@ nav:
     - Enlaces de interés: ud6_electronica_digital/enlaces.md
   - UD7 Sistemas automáticos:
     - Teoría: ud7_sistemas_automaticos/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud7_sistemas_automaticos/pau_2526.md
+    - Problemas PAU: ud7_sistemas_automaticos/pau_ud7.md
     - Enlaces de interés: ud7_sistemas_automaticos/enlaces.md
   
