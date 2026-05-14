@@ -38,4 +38,7 @@ Cada unidad didáctica incluye los siguientes apartados:
 Departamento de Tecnología · IES *IES Luis Vélez de Guevara*
 
 !!! info "Sobre estos apuntes"
-    Material elaborado para el alumnado de 2º Bachillerato de Tecnología e Ingeniería de Andalucía. Cualquier error o sugerencia puede comunicarse al profesor.
+    Material elaborado para el alumnado de 2º Bachillerato de Tecnología e Ingeniería de Andalucía. Cualquier error o sugerencia puede comunicarse al siguiente correo:  **makinando24@gmail.com**
+
+---
+
