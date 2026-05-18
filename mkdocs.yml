@@ -45,11 +45,7 @@ nav:
     - Enlaces de interés: ud2_estructuras/enlaces.md
   - UD3 Máquinas térmicas:
     - Teoría: ud3_maquinas_termicas/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud3_maquinas_termicas/pau_2526.md
-      - Curso 24/25: ud3_maquinas_termicas/pau_2425.md
-      - Curso 23/24: ud3_maquinas_termicas/pau_2324.md
-      - Curso 18/19: ud3_maquinas_termicas/pau_1819.md
+    - Problemas PAU: ud3_maquinas_termicas/pau_ud3.md
     - Enlaces de interés: ud3_maquinas_termicas/enlaces.md
   - UD4 Neumática e hidráulica:
     - Teoría: ud4_neumatica_hidraulica/teoria.md
