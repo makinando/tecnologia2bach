@@ -53,19 +53,11 @@ nav:
     - Enlaces de interés: ud4_neumatica_hidraulica/enlaces.md
   - UD5 Corriente alterna:
     - Teoría: ud5_corriente_alterna/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud5_corriente_alterna/pau_2526.md
-      - Curso 24/25: ud5_corriente_alterna/pau_2425.md
-      - Curso 23/24: ud5_corriente_alterna/pau_2324.md
-      - Curso 18/19: ud5_corriente_alterna/pau_1819.md
+    - Problemas PAU: ud5_corriente_alterna/pau_ud5.md
     - Enlaces de interés: ud5_corriente_alterna/enlaces.md
   - UD6 Electrónica digital:
     - Teoría: ud6_electronica_digital/teoria.md
-    - Problemas PAU:
-      - Curso 25/26: ud6_electronica_digital/pau_2526.md
-      - Curso 24/25: ud6_electronica_digital/pau_2425.md
-      - Curso 23/24: ud6_electronica_digital/pau_2324.md
-      - Curso 18/19: ud6_electronica_digital/pau_1819.md
+    - Problemas PAU: ud6_electronica_digital/pau_ud6.md
     - Enlaces de interés: ud6_electronica_digital/enlaces.md
   - UD7 Sistemas automáticos:
     - Teoría: ud7_sistemas_automaticos/teoria.md
