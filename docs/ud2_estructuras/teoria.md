@@ -1,6 +1,8 @@
-# UD1 Estructuras
+# UD2 Estructuras
 
 [Descargar UD2 Estructuras](https://drive.google.com/file/d/1l6Z0fPbCTqgCJYwzuj6zN6rbwniNijuo/view?usp=sharing){ .md-button .md-button--primary }
+
+[IES Enrique Díez Canedo](https://sites.google.com/educarex.es/conticdetecnologia/2%C2%BA-bach-tei?authuser=0)
 
 ---
 
