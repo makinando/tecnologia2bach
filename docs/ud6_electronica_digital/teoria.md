@@ -4,15 +4,17 @@
 
 ---
 
-!!! quote "Leonardo da Vinci (1452-1519)"
-    "La simplicidad es la máxima sofisticación. 
-    Una estructura bien diseñada no necesita adornos."
+!!! quote "Albert Einstein (1879-1955)"
+    "¿Por qué esta magnífica tecnología científica, que ahorra trabajo 
+    y nos hace la vida más fácil, nos aporta tan poca felicidad? 
+    Porque aún no hemos aprendido a usarla con tino."
 
-![Puente](images/portada.jpg)
+![Placa](images/placa.jpg)
 
-Las estructuras son el esqueleto de cualquier construcción o máquina. 
-El estudio de vigas, cerchas y los esfuerzos a los que están sometidas 
-permite diseñar construcciones seguras y eficientes, desde puentes y 
-edificios hasta vehículos y aeronaves.
+La electrónica digital estudia los circuitos que trabajan con señales 
+discretas de dos niveles: 0 y 1. El álgebra de Boole, las puertas 
+lógicas, los mapas de Karnaugh y los circuitos combinacionales y 
+secuenciales son las herramientas fundamentales para diseñar desde 
+un simple interruptor hasta un microprocesador.
 
 ---
