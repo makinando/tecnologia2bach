@@ -7,3 +7,7 @@
 #### [Ensayo de materiales](https://drive.google.com/file/d/16uVwz2bLrNsAPSnOzCH22dbLTPCY114l/view?usp=drive_link)
 
 #### [Estructura interna de los materiales](https://drive.google.com/file/d/1onT9g2EltX0RQs5bqd7ui12K46UkA_iX/view?usp=drive_link)
+
+#### [Propiedades y ensayos de materiales de @tecnohelmantica](https://youtube.com/playlist?list=PLIXe7F8ZtHrk&si=Z9ngAuROVBFcO2t9)
+
+
