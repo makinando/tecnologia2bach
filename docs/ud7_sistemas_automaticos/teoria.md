@@ -1,5 +1,7 @@
 # UD7 Sistemas automáticos
 
+[Descargar UD7 Sistemas automáticos](https://drive.google.com/file/d/1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL/view?usp=sharing){ .md-button .md-button--primary }
+
 !!! quote "Katsuhiko Ogata"
     "El control automático ha desempeñado una función vital en el avance de la ingeniería 
     y la ciencia. Ha pasado a ser una parte importante e integral de los procesos modernos 
@@ -10,10 +12,6 @@
 El control automático estudia los sistemas capaces de regular su propio comportamiento 
 sin intervención humana continua, desde simples termostatos hasta complejos sistemas 
 aeroespaciales.
-
----
-
-[Descargar UD7 Sistemas automáticos](https://drive.google.com/file/d/1RJUEZcGqEh1qOfxKMtTJGpuGJjyi72XL/view?usp=sharing){ .md-button .md-button--primary }
 
 ---
 
