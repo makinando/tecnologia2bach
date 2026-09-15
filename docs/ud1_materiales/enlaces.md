@@ -10,4 +10,6 @@
 
 #### [Propiedades y ensayos de materiales de @tecnohelmantica](https://youtube.com/playlist?list=PLIXe7F8ZtHrk&si=Z9ngAuROVBFcO2t9)
 
+#### [Problemas PAU cursos anteriores](https://drive.google.com/drive/u/1/folders/1T-ngyjxo1cLNiraNokSbOVUQ4nvk8O4_)
+
 
