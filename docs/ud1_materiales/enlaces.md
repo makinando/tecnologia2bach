@@ -8,7 +8,7 @@
 
 #### [Estructura interna de los materiales](https://drive.google.com/file/d/1onT9g2EltX0RQs5bqd7ui12K46UkA_iX/view?usp=drive_link)
 
-#### [Propiedades y ensayos de materiales de @tecnohelmantica](https://youtube.com/playlist?list=PLIXe7F8ZtHrk&si=Z9ngAuROVBFcO2t9)
+#### [Propiedades y ensayos de materiales de @tecnohelmantica](https://youtube.com/playlist?list=PLIXe7F8ZtHrk&si=yRVjQNTh_-zNDS--)
 
 #### [Problemas PAU cursos anteriores](https://drive.google.com/drive/u/1/folders/1T-ngyjxo1cLNiraNokSbOVUQ4nvk8O4_)
 
